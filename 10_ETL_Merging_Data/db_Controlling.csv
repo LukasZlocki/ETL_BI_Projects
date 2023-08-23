@@ -1,0 +1,397 @@
+Num,CC,Opis,CC name
+11038,1132110,TURMAT,Housing
+11039,1132110,Kadia Honer,Housing
+11040,1132110,Moriseiki,Housing
+12000,1131120,Walki ogolny WRL,Shaft Soft
+12001,1132121,Walki ogolny WRC,Shaft LR
+120038,1132121,DO not use,Shaft LR
+12010,1131120,Mori Seiki CL2000 - Turning,Shaft Soft
+12011,1131120,MURATEC - Turning,Shaft Soft
+12012,1132121,MURATEC - Odmuchiwanie otwor,Shaft LR
+12021,1131120,Brother - Milling,Shaft Soft
+12031,1132121,JUNKER GRIND 3,Shaft LR
+12032,1132121,JUNKER GRIND 2,Shaft LR
+12033,1132121,JUNKER GRIND 1,Shaft LR
+12034,1132121,STUDER GRIND,Shaft LR
+12035,1132121,JUNKER GRIND 2,Shaft LR
+12036,1132121,JUNKER GRIND 4,Shaft LR
+12038,1132120,do not use,Shaft HR
+12039,1132121,do not use,Shaft LR
+12040,1132121,Pakowanie do Ames,Shaft LR
+12045,1132120,JUNKER GRIND HR,Shaft HR
+12046,1132120,JUNKER GRIND HR,Shaft HR
+12061,1131120,Pfauter (b©dzie Nowy Liebher),Shaft Soft
+12062,1131120,HAAS - Milling,Shaft Soft
+12070,1132120,STUDER S31 DW1400 -Szlifowanie,Shaft HR
+12090,1132121,Magazyn  dostarczenie walkow,Shaft LR
+130000,1132130,Magazyn  NIE UZYWAC !,Gear Whell Steel Sof
+13010,1132130,Magazyn ( dostarczenie materialu),Gear Whell Steel Sof
+130100,1132130,stacja pakowania dla Pune,Gear Whell Steel Sof
+13020,1132130,EMAG Mill 1 +2,Gear Whell Steel Sof
+13030,1132130,P.Wolters (End covers),Gear Whell Steel Sof
+13035,1132130,Pfauter milling,Gear Whell Steel Sof
+13040,1132130,25 tons Klink,Gear Whell Steel Sof
+13050,1132130,Fr”mag,Gear Whell Steel Sof
+13060,1132130,P. Wolters Lappe,Gear Whell Steel Sof
+13080,1132130,Klink 40T Broach / EMAG VC DUO Drill,Gear Whell Steel Sof
+13081,1132130,EMAG VC DUO Drill,Gear Whell Steel Sof
+13082,1132130,New Harnas,Gear Whell Steel Sof
+13085,1132130,Harnas do OSPM,Gear Whell Steel Sof
+13086,1132130,Myjka do wiencow OSPM,Gear Whell Steel Sof
+13090,1132130,Myjki do wiencow OSP i OMP,Gear Whell Steel Sof
+13091,1132130,Pakowanie GWSS,Gear Whell Steel Sof
+14020,1132140,"Slibe OMP kranse, 2 x M„gerle MGC",Gear Whell Steel Har
+14040,1132140,Assembly table,Gear Whell Steel Har
+14041,1132140,Assembly table,Gear Whell Steel Har
+14042,1132140,US Packing Tabel (14040),Gear Whell Steel Har
+14060,1132140,KAPP Profile Grind OMP&OMPI,Gear Whell Steel Har
+14061,1132140,KAPP Profile Grind OMM&OML,Gear Whell Steel Har
+14062,1132140,M„gerle Profile Grind,Gear Whell Steel Har
+14063,1132140,Assembly table,Gear Whell Steel Har
+150000,1132160,Magazyn,Roller GearWheel Set
+15002,1132160,Klink Broach / VL5 Drill,Roller GearWheel Set
+15004,1132160,Stama 530 Broach / SW Drill - not active,Roller GearWheel Set
+15005,1132160,Fr”mag Broach / VL5 Drill,Roller GearWheel Set
+15006,1132160,Dobbelt Klink (King Kong),Roller GearWheel Set
+15007,1132160,Emag VL5 - Dobbelt,Roller GearWheel Set
+15010,1132160,Discus,Roller GearWheel Set
+15011,1132160,ELB PROFILGRINDING do not use,Roller GearWheel Set
+15035,1132160,3 * Reinecker,Roller GearWheel Set
+160000,1132160,Magazyn,Roller GearWheel Set
+160001,1132160,Dostarczenie pod Discussa,Roller GearWheel Set
+160002,1132160,Dostarczenie materiaˆu,Roller GearWheel Set
+16001,1132161,Cechowanie,Roller GearWheel Rim
+16002,1132161,New Klink Broach,Roller GearWheel Rim
+16003,1132161, VL5 Drill,Roller GearWheel Rim
+16004,1132161,Fr”mag Broach,Roller GearWheel Rim
+16005,1132161,VL5 Drill,Roller GearWheel Rim
+16006,1132161,Dobbelt Klink (King Kong),Roller GearWheel Rim
+16007,1132161, VL5 Drill,Roller GearWheel Rim
+16008,1132160,SW BA25,Roller GearWheel Set
+16009,1132161,Przeciaganie zgrubne,Roller GearWheel Rim
+16010,1132161,Discus,Roller GearWheel Rim
+16011,1132161,Mycie ( wience ),Roller GearWheel Rim
+16012,1132161,Pakowanie wiencow do Chin,Roller GearWheel Rim
+16014,1132161,Cechowanie,Roller GearWheel Rim
+16016,1132161,Cechowanie,Roller GearWheel Rim
+16018,1132161,Znakowanie laserowe,Roller GearWheel Rim
+16020,1132161,Szczotkarka,Roller GearWheel Rim
+16028,1132140,STAHLI HEIGHT GRIND,Gear Whell Steel Har
+16029,1132140,WOLTERS ( obok Stahli),Gear Whell Steel Har
+16030,1132140,MAEGERLE MGC GRIND GEARWHEELOMP/R/S,Gear Whell Steel Har
+16031,1132160,MAEGERLE SILVER,Roller GearWheel Set
+16032,1132160,Reinecker R2,Roller GearWheel Set
+16035,1132160,Reinecker R4,Roller GearWheel Set
+16036,1132160,US Packing Tabel (16035),Roller GearWheel Set
+16037,1132160,Reinecker R3,Roller GearWheel Set
+16038,1132160,Reinecker R5,Roller GearWheel Set
+16039,1132160,Reinecker R1,Roller GearWheel Set
+16040,1132160,MAEGERLE MGC GRIND GEARWHEEL OMP/T/V,Roller GearWheel Set
+16050,1132160,szlifowanie ( wklady),Roller GearWheel Set
+16051,1132160,stol  do MAEGERLE SILVER,Roller GearWheel Set
+16066,1132161,magazyn - dostarczenie materialu,Roller GearWheel Rim
+16080,1132160,Grinding wheel,Roller GearWheel Set
+16081,1132160,US Packing Tabel (16080),Roller GearWheel Set
+16082,1132160,Assembly table TMT,Roller GearWheel Set
+16095,1132320,WASHING MACHINE,Manganese
+16096,1132160,PACK RIM,Roller GearWheel Set
+16099,1132160,PACK WHEELS INDIVIDUALLY,Roller GearWheel Set
+16210,1132162,Painting Line,Painting Line
+16220,1132162,Zaczyszczanie,Painting Line
+16230,1132162,Gwintowanie,Painting Line
+17010,1131170,Variant Housing,Housing Variant&Mini
+17020,1131170,Variant Housing - honing,Housing Variant&Mini
+17025,1131170,Mini Housing toczenie,Housing Variant&Mini
+17030,1131170,Mini Housing,Housing Variant&Mini
+17040,1131170,Variant Housing - support,Housing Variant&Mini
+17050,1131170,DMC 60H (DW0607/8),Housing Variant&Mini
+17060,1131170,NZX 2000 (DW0610),Housing Variant&Mini
+180000,1131180,Magazyn - dostarczenie pod Liebherr,Cardan Shaft
+18010,1131180,Cardan shaft - turning,Cardan Shaft
+18020,1131180,Cardan shaft - milling,Cardan Shaft
+18030,1131180,Cardan shaft - milling,Cardan Shaft
+18040,1131180,Liebherr (Steering) - new machine,Cardan Shaft
+18510,1131185,End Cover,Casting OMS/OMPR
+18520,1131185,End Cover OMS,Casting OMS/OMPR
+18530,1131185,Variant Housing - support,Casting OMS/OMPR
+19010,1131190,OMEW Housing,Housing OMRS & OMEW
+19020,1131190,OMRS Housing,Housing OMRS & OMEW
+19030,1131190,Pilot flange,Housing OMRS & OMEW
+19040,1131190,OMRS Housing - wier+frez,Housing OMRS & OMEW
+190530,1131195,mycie,Heat Treatment
+19510,1131195,Heat treatment,Heat Treatment
+19530,1131195,mycie,Heat Treatment
+21001,1132210,Washing components before assembly,Assembly SMC
+21010,1132210,End Cover SMC2,Assembly SMC
+21025,1132210,Front flange - SMC2,Assembly SMC
+21030,1132210,Assembly Linie SMC2,Assembly SMC
+21031,1132210,Assembly Linie SMC2 - Station 2,Assembly SMC
+21032,1132210,Assembly Linie SMC2 - Station 3,Assembly SMC
+21033,1132210,TESTY SMC2,Assembly SMC
+21039,1132210,Rework station,Assembly SMC
+21040,1132210,Manual Assembly Linie Station 1,Assembly SMC
+21041,1132210,Manual Assembly Linie Station 2,Assembly SMC
+21050,1132210,Pack SMC2,Assembly SMC
+21055,1132210,Packing - Painted Motors,Assembly SMC
+21056,1132210,Pack Line For Manual Assembly,Assembly SMC
+21060,1132210,HIC Assembly,Assembly SMC
+21065,1132210,Packing - Not Painted SMC,Assembly SMC
+21080,1132210,Assembly Linie SMC1 - Stacja buforowa,Assembly SMC
+21081,1132210,Assembly Linie SMC2 - Monta¾,Assembly SMC
+21090,1132210,SMC1 - Pakowanie do kartonu,Assembly SMC
+21091,1132210,SMC1 - Pakowanie do malarza,Assembly SMC
+22010,1132220,End Cover Variant,Assembly Varian/Mini
+22020,1132220,Front Cover Variant,Assembly Varian/Mini
+22025,1132220,Brake Kit Variant,Assembly Varian/Mini
+22030,1132220,Assembly / Test Variant,Assembly Varian/Mini
+22050,1132220,Single Pack Variant,Assembly Varian/Mini
+22060,1132220,TESTY VARIANT,Assembly Varian/Mini
+22070,1132220,Assembly / Test Mini,Assembly Varian/Mini
+22071,1132220,Assembly / Test Mini,Assembly Varian/Mini
+22080,1132220,TESTY MINI,Assembly Varian/Mini
+22085,1132220,Packing - Not Painted Mini + Variant,Assembly Varian/Mini
+22090,1132310,Thermal deburring NOR,HARDENING
+22099,1132220,INSTRUCTION PACK TABLE,Assembly Varian/Mini
+23010,1132230,OMS line - Wermtech,Assembly OMS
+23020,1132230,OMS line - Variant,Assembly OMS
+23030,1132230,OMS line - Wermtech,Assembly OMS
+23040,1132230,OMS line - Spare parts with HIC,Assembly OMS
+23050,1132230,OMEW line,Assembly OMS
+23051,1132230,OMEW line,Assembly OMS
+23055,1132230,Packing OMS - painted motors,Assembly OMS
+23065,1132230,Packing OMS - not painted motors,Assembly OMS
+23090,1132230,Hydraulic test - motor OMEW - NOR (36040,Assembly OMS
+23091,1132230,Painting type 1- motor OMEW - NOR (50H10,Assembly OMS
+23092,1132230,OMEW packing - NOR (50H40),Assembly OMS
+24040,1132240,Modules Orbital X - main,Modules Orbital X
+24041,1132240,Modules Orbital X,Modules Orbital X
+25010,1132250,OX line - assembly test,Assembly Orbital X
+25020,1132250,Packing OX,Assembly Orbital X
+31010,1132310,Heat Treatment - NOR,HARDENING
+31011,1132311,Manganese - NOR,MANGANESE
+32010,1132320,MnPh Center,Manganese
+32020,1132320,mycie DW1234 przed grub¥ warstw¥,Manganese
+32030,1132320,Packing/Repacking MnPh,Manganese
+32050,1132320,Dostarczenie pod MnPh WRC,Manganese
+33010,1131195,hartownia BODYCOTE,Heat Treatment
+33010,1131195,hartownia BODYCOTE,Heat Treatment
+34010,1131195,Heat Treatment - Bodycote NOR,Heat Treatment
+51010,1132510,Housing LAG,HOUSE_SU/ GEH
+51015,1132510,Housing LAG,HOUSE_SU/ GEH
+51020,1132510,Housing LAG,HOUSE_SU/ GEH
+51025,1132510,Housing LAG,HOUSE_SU/ GEH
+51030,1132510,Housing LAG,HOUSE_SU/ GEH
+51035,1132510,Housing LAG,HOUSE_SU/ GEH
+51040,1132510,Housing LAG,HOUSE_SU/ GEH
+51045,1132510,Housing LAG,HOUSE_SU/ GEH
+51050,1132510,Housing LAG,HOUSE_SU/ GEH
+51055,1132510,Housing LAG,HOUSE_SU/ GEH
+51060,1132510,Housing LAG,HOUSE_SU/ GEH
+52010,1132520,Housing PV,HOUSE_VALV/LPS_VGEH
+52020,1132520,Housing PV,HOUSE_VALV/LPS_VGEH
+52030,1132520,Housing PV,HOUSE_VALV/LPS_VGEH
+52040,1132520,Housing PV,HOUSE_VALV/LPS_VGEH
+52050,1132520,Housing PV,HOUSE_VALV/LPS_VGEH
+52060,1132520,Housing PV,HOUSE_VALV/LPS_VGEH
+52070,1132520,Housing PV,HOUSE_VALV/LPS_VGEH
+52080,1132520,Housing PV,HOUSE_VALV/LPS_VGEH
+52090,1132520,Housing PV,HOUSE_VALV/LPS_VGEH
+53010,1132530,Spool set soft,SPOOL_SET_SOFT/SV_W
+53020,1132530,Spool set soft,SPOOL_SET_SOFT/SV_W
+53030,1132530,Spool set soft,SPOOL_SET_SOFT/SV_W
+53040,1132530,Spool set soft,SPOOL_SET_SOFT/SV_W
+53050,1132530,Spool set soft,SPOOL_SET_SOFT/SV_W
+53060,1132530,Spool set soft,SPOOL_SET_SOFT/SV_W
+54010,1132540,Spool set hard,SPOOL_SET_HARD/SV_H
+54015,1132540,Spool set hard,SPOOL_SET_HARD/SV_H
+54020,1132540,Spool set hard,SPOOL_SET_HARD/SV_H
+54025,1132540,Spool set hard,SPOOL_SET_HARD/SV_H
+54030,1132540,Spool set hard,SPOOL_SET_HARD/SV_H
+54035,1132540,Spool set hard,SPOOL_SET_HARD/SV_H
+54040,1132540,Spool set hard,SPOOL_SET_HARD/SV_H
+54045,1132540,Spool set hard,SPOOL_SET_HARD/SV_H
+54050,1132540,Spool set hard,SPOOL_SET_HARD/SV_H
+54055,1132540,Spool set hard,SPOOL_SET_HARD/SV_H
+54060,1132540,Spool set hard,SPOOL_SET_HARD/SV_H
+54065,1132540,Spool set hard,SPOOL_SET_HARD/SV_H
+55010,1132550,Gearset PCH,GEAR_SET/VDR
+55020,1132550,Gearset PCH,GEAR_SET/VDR
+55030,1132550,Gearset PCH,GEAR_SET/VDR
+55040,1132550,Gearset PCH,GEAR_SET/VDR
+55050,1132550,Gearset PCH,GEAR_SET/VDR
+55060,1132550,Gearset PCH,GEAR_SET/VDR
+55070,1132550,Gearset PCH,GEAR_SET/VDR
+55080,1132550,Gearset PCH,GEAR_SET/VDR
+56010,1132560,LAG Assembly,ASSY_TEST/MON_PRUE
+56015,1132560,LAG Assembly,ASSY_TEST/MON_PRUE
+56020,1132560,LAG Assembly,ASSY_TEST/MON_PRUE
+56025,1132560,LAG Assembly,ASSY_TEST/MON_PRUE
+56030,1132560,LAG Assembly,ASSY_TEST/MON_PRUE
+56035,1132560,LAG Assembly,ASSY_TEST/MON_PRUE
+56040,1132560,LAG Assembly,ASSY_TEST/MON_PRUE
+56045,1132560,LAG Assembly,ASSY_TEST/MON_PRUE
+56050,1132560,LAG Assembly,ASSY_TEST/MON_PRUE
+56055,1132560,LAG Assembly,ASSY_TEST/MON_PRUE
+56060,1132560,LAG Assembly,ASSY_TEST/MON_PRUE
+56070,1132560,LAG Assembly,ASSY_TEST/MON_PRUE
+56080,1132560,LAG Assembly,ASSY_TEST/MON_PRUE
+56090,1132560,LAG Assembly,ASSY_TEST/MON_PRUE
+80010,1131195,Heat treatment,Heat Treatment
+80010,1131195,Heat treatment,Heat Treatment
+802010,1131802,STAHLI,Gear sets
+802020,1131802,Reineker OSPM,Gear sets
+802030,1131802,Reineker OSP,Gear sets
+80400,1131804,Material preparing,Housing OSPM/OSPMS
+80410,1131804,Emag DW375,Housing OSPM/OSPMS
+80420,1131804,Gildemaister DW331,Housing OSPM/OSPMS
+80430,1131804,Stama DW338/395,Housing OSPM/OSPMS
+80440,1131804,Honing OSPM/OSPMS (WC27),Housing OSPM/OSPMS
+80450,1131804,Kadia OSPM (WC27),Housing OSPM/OSPMS
+80460,1131804,Stama 5X DW339,Housing OSPM/OSPMS
+80470,1131804,Monfors,Housing OSPM/OSPMS
+80480,1131804,Drill Wilton DW382 + wash DW615,Housing OSPM/OSPMS
+80500,1131805,Material preparing,Sleeve & Spool Soft
+80510,1131805,Gildemaster/Stama (WC19),Sleeve & Spool Soft
+80520,1131805,Stama/Pfauter (WC24),Sleeve & Spool Soft
+80530,1131805,Wash (WC24),Sleeve & Spool Soft
+80540,1131805,Milling/Deburring (WC19),Sleeve & Spool Soft
+80560,1131805,Richardon (Steering),Sleeve & Spool Soft
+80610,1131806,Faziarka OSPM,Sleeve & Spool Hard
+80620,1131806,Studer OSPM,Sleeve & Spool Hard
+80630,1131806,Studer kojarzacy,Sleeve & Spool Hard
+80740,1131807,Prepare Parts OSPM,Assembly OPSM/OSPMS
+80741,1131807,Mach grinding OSPM,Assembly OPSM/OSPMS
+80742,1131807,OSPM Assembly,Assembly OPSM/OSPMS
+80743,1131807,Test OSPM,Assembly OPSM/OSPMS
+80755,1131807,packing Steering,Assembly OPSM/OSPMS
+80756,1131807,Prepare Parts OSPMS/OSP,Assembly OPSM/OSPMS
+80800,1131808,Material preparing,Components OSP Sl&Sp
+80810,1131805,Robotdrillig (WC1),Sleeve & Spool Soft
+80820,1131805,Jotes (WC10),Sleeve & Spool Soft
+80830,1131808,Deburring (WC1),Components OSP Sl&Sp
+80840,1131805,Wash (WC1),Sleeve & Spool Soft
+80850,1131805,Drilling OSP,Sleeve & Spool Soft
+80910,1131809,not used,Sle&sp
+80911,1131809,szlifowanie kojarzace rozdzielacz OSP,Sle&sp
+80912,1131809,honowanie rozdzielacza OSP,Sle&sp
+81000,1131810,Material preparing,Housing OSPP
+81005,1131810,Supporting operations (WC18),Housing OSPP
+81010,1131810,Mazak  1-3 (WC18),Housing OSPP
+81040,1131810,Mazak 4 + Stama (WC18),Housing OSPP
+81050,1131810,PEHAMA (WC15),Housing OSPP
+81100,1131811,Material preparing,Hou OSP
+81105,1131811,Marking (WC16),Hou OSP
+81110,1131811,Emag (WC16),Hou OSP
+81115,1131811,Supporting operations (WC16),Hou OSP
+81120,1131811,Honsberg/Stama (WC16),Hou OSP
+81130,1131810,Air Clean (WC16),Housing OSPP
+81140,1131810,Kadia  OSP (WC15),Housing OSPP
+81150,1131810,Nagel (WC15),Housing OSPP
+81160,1131811,Gluing (WC16),Hou OSP
+81210,1131812,Prepare Parts OSP,Assembly OSPP
+81211,1131812,Mach grinding OSP,Assembly OSPP
+81212,1131812,OSP Assembly,Assembly OSPP
+81213,1131812,Test OSP,Assembly OSPP
+81221,1131812,Mach grinding OSPP,Assembly OSPP
+81222,1131812,OSPP Assembly,Assembly OSPP
+81223,1131812,Test OSPP,Assembly OSPP
+81230,1131807,Prepare Parts OSPMS/OSP,Assembly OPSM/OSPMS
+81231,1131807,Mach grinding OSPMS/OSP,Assembly OPSM/OSPMS
+81232,1131807,OSPMS/OSP Assembly,Assembly OPSM/OSPMS
+81233,1131807,Test OSPMS/OSP,Assembly OPSM/OSPMS
+81234,1131812,packing Steering,Assembly OSPP
+81235,1131812,packing Steering,Assembly OSPP
+820000,1131821,Magazyn - dostarczenie pod Wibro,Chemical Treatment
+82110,1131821,TD & Pickling,Chemical Treatment
+82111,1131821,TD & Pickling,Chemical Treatment
+82120,1131821,Manganese line,Chemical Treatment
+82140,1131821,Tumbling Mini Cardan Shafts,Chemical Treatment
+82150,1131821,Tumbling Variant Cardan Shafts,Chemical Treatment
+82160,1131821,Packing to ZHE,Chemical Treatment
+ALSFORM,1131170,Variant Housing - support,Housing Variant&Mini
+ASSEMNOR,1132381,Assembly in Nordborg,Nor Lab
+EXTGALWA,1131806,Wysylka do Galwanizera,Sleeve & Spool Hard
+EXTKPK,1131120,Shipment to KPK,Shaft Soft
+EXTMNPH,1132300,US Packing Tabel (14040),Production Indirect
+EXTPAINT,1132210,MALARZ,Assembly SMC
+EXTSNDBL,1132210,wysylka do Piaskowania,Assembly SMC
+GALWA,1131806,Galwanizer,Sleeve & Spool Hard
+HEAT NOR,1132300,Shipping Department In / Out - NOR,Production Indirect
+HEAT T,1132300,Shipping Department In / Out,Production Indirect
+KPK,1131120,Powrot od malarza,Shaft Soft
+MAGAZYN,1132130,Magazyn ( dostarczenie materialu),Gear Whell Steel Sof
+MATERIAL,1132121,Magazyn ( dostarczenie materialu),Shaft LR
+PACK WRL,1131804,Pakowanie WRL,Housing OSPM/OSPMS
+PAINT,1132162,MALARZ,Painting Line
+PLR,1132110,PLR - drilling drain,Housing
+POWROT,1132160,powrot,Roller GearWheel Set
+QI,1132130,Quality Inspection,Gear Whell Steel Sof
+RCV WRC,1132160,Shipping Department In / Out,Roller GearWheel Set
+RCV WRC2,1132160,Shipping Department In / Out - rework,Roller GearWheel Set
+RCV WRL,1132160,Shipping Department In / Out,Roller GearWheel Set
+RCVGALWA,1131806,powrot od Galwanizera,Sleeve & Spool Hard
+RCVKPK,1131120,Powrot od malarza,Shaft Soft
+RCVMNPH,1132300,US Packing Tabel (14040),Production Indirect
+RCVPAINT,1132210,Powrot od malarza,Assembly SMC
+RCVSNDBL,1132210,powrot z piaskowania,Assembly SMC
+S PAINT,1131815,MALARZ STEERING,Production support
+S RETURN,1131815,Return from Paint,Production support
+S SHIP,1131815,Ship to Paint,Production support
+S SHIP A,1131815,Ship to Paint_Alu,Production support
+SERV DK,1131190,Niklowanie w Sonderborg Fornikling,Housing OMRS & OMEW
+SERV NOR,1132160,Shipping Department In / Out,Roller GearWheel Set
+SERV WR0,1132160,Shipping Department In / Out,Roller GearWheel Set
+SERV WRC,1132160,Shipping Department In / Out,Roller GearWheel Set
+SERV WRL,1132160,Shipping Department In / Out,Roller GearWheel Set
+SERV ZHE,1132160,Shipping Department In / Out to China,Roller GearWheel Set
+SNDBLAST,1132210,Piaskowanie,Assembly SMC
+WYSYLKA,1132160,wysylka,Roller GearWheel Set
+12010,1131120,Mori Seiki CL2000 - Turning,Shaft Soft
+12011,1131120,MURATEC - Turning,Shaft Soft
+12021,1131120,Brother - Milling,Shaft Soft
+12061,1131120,Spline Milling in NOR,Shaft Soft
+12062,1131120,HAAS - Milling,Shaft Soft
+WC1,1131808,tuleja OSP na miekko,
+WC10,1131808,tuleja OSP na twardo,Sle&sp
+WC11,1131809,walek OSP na twardo,Sle&sp
+WC12,1131821,gratowanie termiczne + fosforanowanie (w,Chemical Treatment
+WC13,1131195,obrobka cieplna + piaskarka (walki naped,Heat Treatment
+WC14,1131803,walek napedowy OSPM,Cardan
+WC15,1131811,honowanie korpusu OSP+OSPP,Cardan
+WC16,1131811,korpus OSP (calosc przed gratowaniem ter,Cardan
+WC17,1131804,"ciecie (wieniec OSP, OMP, OSPM)",Housing OSPM/OSPMS
+WC18,1131810,korpusy OSPP/OSP,Housing OSPP
+WC19,1131805,tuleja rozrzadcza OSPM na miekko,Sleeve & Spool Soft
+WC2,1131802,wklad OSPM,Gear sets
+WC20,1131801,wience OSP+OMP na miekko,Gear sets
+WC21,1131804,wience OSPM na miekko,Housing OSPM/OSPMS
+WC22,1131804,korpus OSPMS,Housing OSPM/OSPMS
+WC23,1131804,korpus OSPM,Housing OSPM/OSPMS
+WC24,1131805,walek OSPM na miekko,Sleeve & Spool Soft
+WC25,1131815,KOOPERACJA,Sleeve & Spool Soft
+WC26,1131809,szlifowanie kojarzace rozdzielacz OSP,Sleeve & Spool Soft
+WC27,1131804,honowanie korpusu OSPM,Housing OSPM/OSPMS
+WC28,1131801,frezowanie kol OMP,Housing OSPM/OSPMS
+WC29,1131804,kolo OSPR+walek TAD,Housing OSPM/OSPMS
+WC3,1131806,walek OSPM na twardo + rozdzielacz,Sleeve & Spool Hard
+WC30,1131811,stama 5x (waskie gardlo),Sleeve & Spool Hard
+WC31,1131807,pakowanie OSPM,Assembly OPSM/OSPMS
+WC32,1131807,pakowanie OSP (kartony),Assembly OPSM/OSPMS
+WC33,1131812,pakowanie OSP (palety),Assembly OSPP
+WC34,1131195,Myjka Seco Warwick,Heat Treatment
+WC4,1131802,wklad OSP,Gear sets
+WC5,1131812,montaz OSP stary,Assembly OSPP
+WC6,1131812,montaz OSP nowy,Assembly OSPP
+WC7,1131807,montaz OSPM,Assembly OPSM/OSPMS
+WC8,1131808,korpus wyj˜ciowy TAD,Assembly OPSM/OSPMS
+WC9,1131812,montaz OSPP,Assembly OSPP
+56065,1132560,LAG Assembly DW1493 MAFAC,Sleeve & Spool Soft
+56075,1132560,LAG Assembly DW1494 STUDER/RHU,Sleeve & Spool Soft
+56085,1132560,LAG Assembly DW1495 BULA,Sleeve & Spool Soft
+56095,1132560,LAG Assembly DW1505 WEMA,Sleeve & Spool Soft
+51075,1132510,DW1427 Tischpresse - 733,HOUSE_SU/ GEH
+53070,1132530,DW1479 Wyssbrod,SPOOL_SET_SOFT/SV_W
+54065,1132540,Entgraten manuell - 555,SPOOL_SET_HARD/SV_H
+56094,1132560,DW1504 Schleifmaschine RHU 650/173 - 770,Sleeve & Spool Soft
+HANOMAG,1132550,PLR - drilling drain,GEAR_SET/VDR
+HNT,1132530,HNT,SPOOL_SET_SOFT/SV_W
