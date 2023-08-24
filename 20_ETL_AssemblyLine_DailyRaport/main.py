@@ -22,7 +22,21 @@ def main():
     row_dataset = rep.get_raw_dataset()
     rep.print_dataset(row_dataset, 5)
 
-    # TRANSFORM data to daily raports
+    # ToDo: TRANSFORM data to daily reports
+    
+
+
+
+    # ToDo: Calculate OEE
+    # ToDo: Create final daily report
+    # ToDo: Save daily reports to csv file
+
+    # ToDo: TRANSFORM data to shift reports
+    # ToDo: Calculate OEE for each shift
+    # ToDo: Create final shift reports
+    # ToDo: Save shift reports to csv file
+
+
 
 if __name__ == '__main__':
     main() 
