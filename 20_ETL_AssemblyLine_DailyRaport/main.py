@@ -32,13 +32,6 @@ def main():
     print("Transformed data - base_dataset ***")
     rep.print_dataset(transformed_row_dataset, 10)
 
-    ## to delete (?)
-    #rep._transform_date_to_date_without_time_in_dataset(row_dataset)
-    #print("Printing 25 base dataset elements:")
-    #base_dataset = #.get_base_dataset()
-    # rep.print_dataset(base_dataset, 25)
-
-
     # ToDo: TRANSFORM data to daily reports
     rep_daily = dr.DailyReport()
     rep_daily.load_raw_dataset_from_csv_file("./out/", "raw_raports.csv")
@@ -57,8 +50,6 @@ def main():
     # ToDo: Calculate OEE for each shift
     # ToDo: Create final shift reports
     # ToDo: Save shift reports to csv file
-
-
 
 if __name__ == '__main__':
     main() 
