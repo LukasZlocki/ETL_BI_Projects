@@ -45,6 +45,7 @@ class Report:
             counter = counter +1
             if counter == rows_to_print:
                 break
+        print("")
 
     def get_raw_dataset(self):
         """
