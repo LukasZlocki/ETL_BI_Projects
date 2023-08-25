@@ -31,7 +31,6 @@ def main():
     transformed_row_dataset = data_transformator.transform_date_in_dataset(row_dataset) 
     print("Transformed data - base_dataset ***")
     rep.print_dataset(transformed_row_dataset, 10)
-    print("END OF : Transformed data - base_dataset ***")
 
     ## to delete (?)
     #rep._transform_date_to_date_without_time_in_dataset(row_dataset)
