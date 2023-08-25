@@ -4,6 +4,7 @@ from pathlib import Path
 
 import data_extractor as de
 import report
+import daily_report as dr
 
 SOURCE_PATH = Path("./src/")
 OUTPUT_PATH = Path("./out/")
@@ -22,10 +23,21 @@ def main():
     row_dataset = rep.get_raw_dataset()
     rep.print_dataset(row_dataset, 5)
 
+    rep._transform_date_to_date_without_time_in_dataset(row_dataset)
+    print("Printing 25 base dataset elements:")
+    base_dataset = rep.get_base_dataset()
+    rep.print_dataset(base_dataset, 25)
+
+
     # ToDo: TRANSFORM data to daily reports
-    
-
-
+    rep_daily = dr.DailyReport()
+    rep_daily.load_raw_dataset_from_csv_file("./out/", "raw_raports.csv")
+    data_set_raw = rep_daily.get_raw_dataset()
+    rep_daily.print_dataset(data_set_raw, 5)
+    rep_daily.transform_dataset_to_daily_reports(data_set_raw)
+    daily_reports = rep_daily.get_calculated_daily_reports()
+    print("Printing 25 daily reports:")
+    rep_daily.print_dataset(daily_reports,25)
 
     # ToDo: Calculate OEE
     # ToDo: Create final daily report
