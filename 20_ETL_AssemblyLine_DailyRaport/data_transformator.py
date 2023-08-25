@@ -1,6 +1,6 @@
 # Transform data to user needs
 
-import datetime as datetime
+from datetime import datetime
 
 class DataTransformator:
         
@@ -28,6 +28,6 @@ class DataTransformator:
 
     def _remove_not_needed_elements_from_date(self, date):
         date_to_date_time = datetime.strptime(date, "%Y-%m-%d %H:%M:%S")
-        date_without_time = date_to_date_time.date()
-        pure_date = date_without_time.strftime("%Y-%m-%d")
+        #date_without_time = date_to_date_time.date()
+        pure_date = date_to_date_time.strftime("%Y-%m-%d")
         return pure_date
