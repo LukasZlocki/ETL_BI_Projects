@@ -45,6 +45,7 @@ class Report:
             counter = counter +1
             if counter == rows_to_print:
                 break
+        print("")
 
     def get_raw_dataset(self):
         """
@@ -53,3 +54,8 @@ class Report:
         : rtype: array
         """
         return self.__raw_dataset
+      
+    # Calculate oee for given data. Return value raunded to two digits
+    def __calculate_oee(self, planned_output, real_output):
+        percentage_result = round(real_output*100/planned_output,2)
+        return percentage_result
