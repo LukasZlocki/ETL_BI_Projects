@@ -1,10 +1,16 @@
 import csv
 import os
+import data_transformator as data_transformator
 
 class Report:
     def __init__(self):
         self.__raw_dataset = []
-    
+        self.__base_dataset = []
+
+    def transform_raw_dataset_to_base_dataset(self, raw_dataset):
+        dt = data_transformator.DataTransformator()
+        self.__base_dataset = dt.transform_date_in_dataset(raw_dataset)
+
     def load_raw_dataset_from_csv_file(self,path, file_name):
         """
         load raw report dataset from csv file and store it in __raw_dataset
@@ -30,6 +36,10 @@ class Report:
         : type source_path: pathlib object Path
         : type output_file: string
         """
+        with open(os.path.join(output_path, output_file), mode='w', newline='') as csv_file:
+            csv_writer = csv.writer(csv_file)
+            for row in report:
+                csv_writer.writerow(row)
     
     def print_dataset(self, dataset, rows_to_print):
         """
@@ -54,8 +64,3 @@ class Report:
         : rtype: array
         """
         return self.__raw_dataset
-      
-    # Calculate oee for given data. Return value raunded to two digits
-    def __calculate_oee(self, planned_output, real_output):
-        percentage_result = round(real_output*100/planned_output,2)
-        return percentage_result

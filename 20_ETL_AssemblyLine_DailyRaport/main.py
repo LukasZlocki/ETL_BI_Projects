@@ -31,7 +31,8 @@ def main():
     transformed_row_dataset = data_transformator.transform_date_in_dataset(row_dataset) 
     print("Transformed data - base_dataset ***")
     rep.print_dataset(transformed_row_dataset, 10)
-
+    
+    """
     # ToDo: TRANSFORM data to daily reports
     rep_daily = dr.DailyReport()
     rep_daily.load_raw_dataset_from_csv_file("./out/", "raw_raports.csv")
@@ -41,7 +42,8 @@ def main():
     daily_reports = rep_daily.get_calculated_daily_reports()
     print("Printing 25 daily reports:")
     rep_daily.print_dataset(daily_reports,25)
-
+    """
+    
     # ToDo: Calculate OEE
     # ToDo: Create final daily report
     # ToDo: Save daily reports to csv file
