@@ -8,24 +8,31 @@ class DailyReport(report.Report):
     # Daily reports 
     daily_reports_dataset = []
 
-    def transform_dataset_to_daily_reports(self):
-        self.__dates_list = self.__extract_all_dates_from_raport(self.__raw_dataset)
-        self.daily_reports_dataset = self.__calculate_raport_for_given_days(self.__dates_list, self.__raw_dataset)
+    def transform_dataset_to_daily_reports(self, raw_dataset):
+        """
+        Transform raw dataset to daily reports
+        : param raw_dataset: dataset in csv format
+        : type dataset: array of strings
+        """
+        self.__dates_list = self.__extract_all_dates_from_raport(raw_dataset)
+        self.daily_reports_dataset = self.__calculate_raport_for_given_days(self.__dates_list, raw_dataset)
 
     # Extract dates from given raport. Return list of dates
-    def __extract_all_dates_from_raport(self, dataset):
+    def __extract_all_dates_from_raport(self, raw_dataset):
         """
         Extracting dates from given dataset
-        : param dataset: dataset in csv format
+        : param raw_dataset: dataset in csv format
         : type dataset: array
         : return: dates list
         : rtype: array
         """
         dates = []
-        for element in dataset:
-            if element[1] not in dates:
-                dates.append(element[1])
-        dates.remove('Date')
+        for element in raw_dataset:
+            if(element[1] == "Date"): # Removing "Date" description in column
+                continue
+            date_without_time = super()._remove_not_needed_elements_from_date(element[1])
+            if date_without_time not in dates:
+                dates.append(date_without_time)
         return dates
 
     # Calculate raports for given list of dates. Return list of daily raports
