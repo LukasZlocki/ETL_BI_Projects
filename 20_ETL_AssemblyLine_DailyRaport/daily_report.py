@@ -8,14 +8,17 @@ class DailyReport(report.Report):
     # Daily reports 
     daily_reports_dataset = []
 
-    def transform_dataset_to_daily_reports(self, raw_dataset):
+    def transform_dataset_to_daily_reports(self, dataset):
         """
-        Transform raw dataset to daily reports
-        : param raw_dataset: dataset in csv format
+        Transform dataset to daily reports
+        : param dataset: dataset in csv format
         : type dataset: array of strings
         """
-        self.__dates_list = self.__extract_all_dates_from_raport(raw_dataset)
-        self.daily_reports_dataset = self.__calculate_raport_for_given_days(self.__dates_list, raw_dataset)
+        self.__dates_list = self.__extract_all_dates_from_raport(dataset)
+        self.daily_reports_dataset = self.__calculate_raport_for_given_days(self.__dates_list, dataset)
+        
+    def get_daily_reports(self):
+        return self.daily_reports_dataset
 
     # Extract dates from given raport. Return list of dates
     def __extract_all_dates_from_raport(self, raw_dataset):
@@ -30,13 +33,12 @@ class DailyReport(report.Report):
         for element in raw_dataset:
             if(element[1] == "Date"): # Removing "Date" description in column
                 continue
-            date_without_time = super()._remove_not_needed_elements_from_date(element[1])
-            if date_without_time not in dates:
-                dates.append(date_without_time)
+            if element[1] not in dates:
+                dates.append(element[1])
         return dates
 
     # Calculate raports for given list of dates. Return list of daily raports
-    def __calculate_raport_for_given_days(self, dates_list):
+    def __calculate_raport_for_given_days(self, dates_list, dataset):
         """
         Calculate daily reports base on raw dataset and list of dates 
         : param dates_lit: list of dates
@@ -46,12 +48,12 @@ class DailyReport(report.Report):
         """
         daily_reports = []
         for day in dates_list:
-            daily_raport = self.__calculate_raport_for_this_day(day)
+            daily_raport = self.__calculate_raport_for_this_day(day, dataset)
             daily_reports.append(daily_raport)
         return daily_reports
     
     # Calcule report for one whole day. Return report table
-    def __calculate_raport_for_this_day(self, day):
+    def __calculate_raport_for_this_day(self, day, dataset):
         """
         Calculate daily report for given day
         : param day: date
@@ -61,10 +63,10 @@ class DailyReport(report.Report):
         """
         daily_output_real = 0
         daily_planned_output = 0
-        for element in self.__dataset:
+        for element in dataset:
             if element[1]== day:
                 daily_planned_output = daily_planned_output + int(element[3])
                 daily_output_real = daily_output_real + int(element[4])
-        oee = self.__calculate_oee(daily_planned_output, daily_output_real)
+        oee = super()._calculate_oee(daily_planned_output, daily_output_real)
         day_report = [day, daily_planned_output, daily_output_real, oee]
         return day_report
