@@ -69,3 +69,21 @@ class Report:
     def _calculate_oee(self, planned_output, real_output):
         percentage_result = round(real_output*100/planned_output,2)
         return percentage_result
+    
+    # Extract dates from given raport. Return list of dates
+    def _extract_all_dates_from_raport(self, dataset):
+        """
+        Extracting dates from given dataset
+        : param dataset: dataset in csv format
+        : type dataset: array
+        : return: dates list
+        : rtype: array
+        """
+        dates = []
+        for element in dataset:
+            if(element[1] == "Date"): # Removing "Date" description in column
+                continue
+            #date_without_time = super()._remove_not_needed_elements_from_date(element[1])
+            if element[1] not in dates:
+                dates.append(element[1])
+        return dates
