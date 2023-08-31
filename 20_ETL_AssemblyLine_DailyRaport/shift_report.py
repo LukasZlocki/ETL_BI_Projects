@@ -37,11 +37,23 @@ class ShiftReport(report.Report):
             shift_3_rep =  self._calculate_shifts_raport_for_given_day_and_shift(date, 3, dataset)
             # add only if raport exist and exclude empty reports
             if shift_1_rep:
-                self._shift_reports_dataset.append(shift_1_rep)
+                self._add_shift_report(shift_1_rep)
             if shift_2_rep:
-                self._shift_reports_dataset.append(shift_2_rep)
+                self._add_shift_report(shift_2_rep)
             if shift_3_rep:
-                self._shift_reports_dataset.append(shift_3_rep)
+                self._add_shift_report(shift_3_rep)
+
+    # Add complete shift report to main list with shift reports
+    def _add_shift_report(self, shift_report):
+        values = []
+        for element in shift_report:
+            for value in element:
+                values.append(value)
+        # Check if there are enough values for a complete entry
+        if len(values) == 5:
+            self._shift_reports_dataset.append([values[0], values[1], values[2], values[3], values[4]])
+        else:
+            print("Not enough values in the shift report to create a complete entry.")
 
     # Extract shifts in date given
     # Format [day, shift_number, output_planned, output real, oee]
