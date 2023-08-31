@@ -27,7 +27,7 @@ def main():
     print("Raw dataset ***")
     rep.print_dataset(row_dataset, 5)
 
-    # Transform raw dataset and modify data(removing time stamp) in each row
+    # TRANSFORM raw dataset and modify data(removing time stamp) in each row
     data_transformator = dt.DataTransformator()
     transformed_row_dataset = data_transformator.transform_date_in_dataset(row_dataset) 
     print("Transformed data - base_dataset ***")
@@ -35,7 +35,6 @@ def main():
     # Save transformed dataset (with date without time) to csv file 
     rep.save_transformed_report_to_csv_file(transformed_row_dataset, OUTPUT_PATH, "raw_dataset_clear_date.csv")
 
-    
     # TRANSFORM data to daily reports
     rep_daily = dr.DailyReport()
     rep_daily.load_raw_dataset_from_csv_file("./out/", "raw_dataset_clear_date.csv")
@@ -62,7 +61,5 @@ def main():
     # Save shift reports to csv file
     rep_shift.save_transformed_report_to_csv_file(shift_reports, "./out/", "shift_reports.csv" )
    
-    # ToDo: Fix Bug - array in array in shift reports ! 
-
 if __name__ == '__main__':
     main() 
