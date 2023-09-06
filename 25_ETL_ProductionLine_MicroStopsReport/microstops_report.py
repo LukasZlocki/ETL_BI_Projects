@@ -1,7 +1,7 @@
 import os
 import csv
 
-class microstopsReport:
+class MicrostopsReport:
     '''
     '''
     _csv_dataset = []

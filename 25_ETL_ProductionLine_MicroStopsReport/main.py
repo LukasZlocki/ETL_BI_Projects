@@ -23,7 +23,7 @@ data_extractor.print_extracted_dataset()
 # Steps ToDo: Save data to csv file
 data_extractor.save_extracted_data_to_csv_file(OUTPUT_PATH, RAW_CSV_DATA_MICROSTOPS)
 # Steps ToDo: Load data from csv file 
-ms_report = ms.MicrostopReport()
+ms_report = ms.MicrostopsReport()
 ms_report.load_dataset_from_csv_file(OUTPUT_PATH, RAW_CSV_DATA_MICROSTOPS)
 print("Printing 10 dataset from raw csv file:")
 ms_report.print_dataset(ms_report._csv_dataset, 10)
