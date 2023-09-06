@@ -6,10 +6,12 @@
 
 from pathlib import Path
 import data_extract as de
+import microstops_report as ms
 
 SOURCE_PATH = Path("./src/")
 OUTPUT_PATH = Path("./out/")
 SOURCE_FILE = "jedox_new.xlsm"
+RAW_CSV_DATA_MICROSTOPS = ("raw_micro_stops.csv")
 
 def main():
     '''
@@ -19,11 +21,19 @@ data_extractor = de.DataExtractor ()
 data_extractor.extract_micro_stops_data_from_excel_sheet(SOURCE_PATH, SOURCE_FILE)
 data_extractor.print_extracted_dataset()
 # Steps ToDo: Save data to csv file
-data_extractor.save_extracted_data_to_csv_file(OUTPUT_PATH, "raw_micro_stops.csv")
+data_extractor.save_extracted_data_to_csv_file(OUTPUT_PATH, RAW_CSV_DATA_MICROSTOPS)
 # Steps ToDo: Load data from csv file 
+ms_report = ms.MicrostopReport()
+ms_report.load_dataset_from_csv_file(OUTPUT_PATH, RAW_CSV_DATA_MICROSTOPS)
+print("Printing 10 dataset from raw csv file:")
+ms_report.print_dataset(ms_report._csv_dataset, 10)
+
 # * Micro stops time resolving *
-# Steps ToDo: Load data from csv file
 # Steps ToDo: Create dictionary to cover all micro stops times (like 1h -> 60 [minutes], like 1h 30minut -> 90 [minutes] )
+# Create class TimeResolver with all algorithms to transfer each description into time in [minutes]
+print("Printing 10 dataset from raw csv and only column with waste time description")
+ms_report.print_given_column_in_dataset(ms_report._csv_dataset, 5, 0)
+
 # Steps ToDo: Create method pointing that script is not able to resolve micro stop given b operator . This operation will be done manualy and description will be added to dictionary manualy
 # Steps TodO: Save data to output csv file
 # * Micro stops root cause standardization *
