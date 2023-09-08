@@ -50,12 +50,22 @@ class TimeResolver:
         "1god.30": 90,
     }
 
-    def _resolve_this_string_to_separate_words_and_numbers(self, time_to_resolve_string):
-        # Descr examples:  1god.30 , 8 godz , 1 godz. 18 min , 3 godz 47min
-        # charakteristic of time description : number | time description | number | time description
-        # step: check char by char retrvie number | next char is not a number - switch to looking for time description
-        # step: check char by char retrvie time description | next char is number - switch to looking to retrive number
-        # output: string divided to array of strings
+    def resolve_string_and_return_time_in_minutes(self, string_to_resolve):
+        resolved_time = 0
+        # extracting words and numbers from string
+        array_of_words_and_numbers = self._extracting_words_and_numbers_from_string(self, string_to_resolve)
+        return resolved_time
+
+    def _extracting_words_and_numbers_from_string(self, time_to_resolve_string):
+        """
+        Extracting words and numbers from passed string
+        : param time_to_resolve_string: string that consist words and numbers 
+        : type time_to_resolve_string: string
+        : type source_path: pathlib object Path
+        : type output_file: string
+        : return: extracted words and numbers from given string
+        : rtype: array
+        """
         # ex:
         # input: "1h 24min"
         # output: [1, h, 24, min] <- new algorithm will be created to resolve this array and convert to minutes
@@ -67,10 +77,10 @@ class TimeResolver:
             if ((char.isdigit() == True) & (is_digit_mode == True)): # retriving number from string mode
                 temporary_string = temporary_string + char
                 continue
-            elif((char.isdigit() == False) & (is_word_mode == True)): # retriving word from string mode 
+            elif((char.isdigit() == False) & (is_word_mode == True) & (ord(char) != 32)): # retriving word from string mode 
                 temporary_string = temporary_string + char
                 continue
-            elif((char.isdigit() == False) & (is_digit_mode == True)): # This is first char in new word
+            elif((char.isdigit() == False) & (is_digit_mode == True)  & (ord(char) != 32)): # This is first char in new word
                 string_array.append(temporary_string)
                 temporary_string = "" + char # reset temporary string and write first char of new word
                 is_digit_mode = False
@@ -82,4 +92,5 @@ class TimeResolver:
                 is_digit_mode = True
                 is_word_mode = False
                 continue
+        string_array.append(temporary_string) # add last string
         return string_array

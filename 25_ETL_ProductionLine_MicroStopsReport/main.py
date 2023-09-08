@@ -37,7 +37,21 @@ ms_report.print_given_column_in_dataset(ms_report._csv_dataset, 5, 5)
 
 # resolving time from string - TESTS ! 
 time_resolver = tr.TimeResolver()
-string_array = time_resolver._resolve_this_string_to_separate_words_and_numbers("1h 24min")
+string_array = time_resolver._extracting_words_and_numbers_from_string("1h 24 min")
+print(string_array)
+string_array = time_resolver._extracting_words_and_numbers_from_string("10 m")
+print(string_array)
+string_array = time_resolver._extracting_words_and_numbers_from_string("26.")
+print(string_array)
+string_array = time_resolver._extracting_words_and_numbers_from_string("10m")
+print(string_array)
+string_array = time_resolver._extracting_words_and_numbers_from_string("")
+print(string_array)
+string_array = time_resolver._extracting_words_and_numbers_from_string(" ")
+print(string_array)
+string_array = time_resolver._extracting_words_and_numbers_from_string("3 godziny")
+print(string_array)
+string_array = time_resolver._extracting_words_and_numbers_from_string("1 godz. 30 m.")
 print(string_array)
 
 # Steps ToDo: Create method pointing that script is not able to resolve micro stop given b operator . This operation will be done manualy and description will be added to dictionary manualy
