@@ -9,7 +9,7 @@ class TimeResolver:
     '''
     # Code algorithm to transform wasted time description like 1m / 1 m / 1godz. / 1 god / 1 godz 30 min
     # try to avoid using dictionary as solution. Reason: too much afford to collect all possible errors in time description.
-    resolving_dict = {
+    _multiplicator_dict = {
         "h": 60,
         " h": 60,
         "m": 1,
@@ -29,32 +29,58 @@ class TimeResolver:
         " MIN": 1,
         "min": 1,
         " min": 1,
+        "m.": 1,
     }
     
     
-    resolving_dict_old = {
-        "1h": 60,
-        "2h": 120,
-        "3m": 3,
-        "3 m": 3,
-        "1m": 1,
-        "1god.30": 90,
-        "1god.30": 90,
-        "1god.30": 90,
-        "1god.30": 90,
-        "1god.30": 90,
-        "1god.30": 90,
-        "1god.30": 90,
-        "1god.30": 90,
-        "1god.30": 90,
-        "1god.30": 90,
-    }
-
     def resolve_string_and_return_time_in_minutes(self, string_to_resolve):
-        resolved_time = 0
         # extracting words and numbers from string
         array_of_words_and_numbers = self._extracting_words_and_numbers_from_string(self, string_to_resolve)
+        resolved_time_array = self._extracting_time_from_array_of_words_and_numbers(array_of_words_and_numbers)
+        resolved_time = self._resolve_time_form_final_array(resolved_time_array)
         return resolved_time
+
+    def _resolve_time_form_final_array(self, resolved_time_array):
+        time = 0
+        for element in resolved_time_array:
+                time = time + element[0] * element[1]
+        return time
+
+    def _extracting_time_from_array_of_words_and_numbers(self, array):
+        """
+        Extracting time from passed array of words and numbers
+        : param array: words and numbers stored in array to resolve and change to time 
+        : type array: array of strings
+        : return: time in [minutes]
+        : rtype: string
+        """
+
+        isNumber = True # resolving timr from number
+        calculation_array = []
+        _number = 0
+        _multiplicator = 0
+        for element in array:
+            if (isNumber):
+                _number = int(element)
+                isNumber = False # switch to look for number from word
+            else:
+                multiplicator_as_string = self._retrive_multiplicator_from_word(element)
+                _multiplicator = int(multiplicator_as_string) # Convert word to proper multipilcator (ex word: 1h = 60 min)
+                isNumber = True
+                calculation_array.append([_number, _multiplicator])
+                _number = 0
+                _multiplicator = 0
+
+        return calculation_array
+
+    def _retrive_multiplicator_from_word(self, word):
+        try:
+            multiplicator = self._multiplicator_dict[word] # taking data from multiplicator dictionary
+            return multiplicator
+        except KeyError:
+            return "Not in dictionary"
+
+
 
     def _extracting_words_and_numbers_from_string(self, time_to_resolve_string):
         """
@@ -77,10 +103,10 @@ class TimeResolver:
             if ((char.isdigit() == True) & (is_digit_mode == True)): # retriving number from string mode
                 temporary_string = temporary_string + char
                 continue
-            elif((char.isdigit() == False) & (is_word_mode == True) & (ord(char) != 32)): # retriving word from string mode 
+            elif((char.isdigit() == False) & (is_word_mode == True) & (ord(char) != 32)): # retriving word from string mode, skipping " "
                 temporary_string = temporary_string + char
                 continue
-            elif((char.isdigit() == False) & (is_digit_mode == True)  & (ord(char) != 32)): # This is first char in new word
+            elif((char.isdigit() == False) & (is_digit_mode == True)  & (ord(char) != 32)): # This is first char in new word, skipping " "
                 string_array.append(temporary_string)
                 temporary_string = "" + char # reset temporary string and write first char of new word
                 is_digit_mode = False
