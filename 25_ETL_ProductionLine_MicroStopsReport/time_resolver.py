@@ -37,10 +37,10 @@ class TimeResolver:
         # extracting words and numbers from string
         array_of_words_and_numbers = self._extracting_words_and_numbers_from_string(self, string_to_resolve)
         resolved_time_array = self._extracting_time_from_array_of_words_and_numbers(array_of_words_and_numbers)
-        resolved_time = self._resolve_time_form_final_array(resolved_time_array)
+        resolved_time = self._resolve_time_from_final_array(resolved_time_array)
         return resolved_time
 
-    def _resolve_time_form_final_array(self, resolved_time_array):
+    def _resolve_time_from_final_array(self, resolved_time_array):
         time = 0
         for element in resolved_time_array:
                 time = time + element[0] * element[1]
