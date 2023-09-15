@@ -34,8 +34,11 @@ ms_report.print_dataset(ms_report._csv_dataset, 10)
 # Create class TimeResolver with all algorithms to transfer each description into time in [minutes]
 print("Printing 10 dataset from raw csv and only column with waste time description")
 ms_report.print_given_column_in_dataset(ms_report._csv_dataset, 5, 5)
+ms_report.resolve_time_description_transform_to_time_in_minutes() # << -- !!
 
-#''' Write a test methods to cover testing of the code and different scenerios
+# DELETE this
+'''
+#Write a test methods to cover testing of the code and different scenerios
 # resolving time from string - TESTS ! 
 time_resolver = tr.TimeResolver()
 string_array = time_resolver._extracting_words_and_numbers_from_string("1h 24 min")
@@ -52,7 +55,10 @@ string_array = time_resolver._extracting_words_and_numbers_from_string(" ")
 print(string_array)
 string_array = time_resolver._extracting_words_and_numbers_from_string("3 godziny")
 print(string_array)
+'''
 
+
+'''
 # Test 1: "1 godz. 30 m.""
 string_array = time_resolver._extracting_words_and_numbers_from_string("1 godz. 30 m.")
 print(string_array)
@@ -60,19 +66,21 @@ print("Testing retriving multipilcator and number. Test Variant: 1 godz. 30 m. "
 resolved_time = time_resolver._extracting_time_from_array_of_words_and_numbers(string_array)
 for element in resolved_time:
     print(element)
-time = time_resolver._resolve_time_form_final_array(resolved_time)
+time = time_resolver._resolve_time_from_final_array(resolved_time)
 print(time)
 
-# Test 1\2: "5""   !!!! FIX THIS IN  CODE ! 
+# Test 2: "5""   !!!! FIX THIS IN  CODE ! 
 string_array = time_resolver._extracting_words_and_numbers_from_string("5")
 print(string_array)
 print("Testing retriving multipilcator and number. Test Variant: 5")
 resolved_time = time_resolver._extracting_time_from_array_of_words_and_numbers(string_array)
 for element in resolved_time:
     print(element)
-time = time_resolver._resolve_time_form_final_array(resolved_time)
+time = time_resolver._resolve_time_from_final_array(resolved_time)
 print(time)
 #'''
+
+
 
 
 # Steps ToDo: Create method pointing that script is not able to resolve micro stop given b operator . This operation will be done manualy and description will be added to dictionary manualy

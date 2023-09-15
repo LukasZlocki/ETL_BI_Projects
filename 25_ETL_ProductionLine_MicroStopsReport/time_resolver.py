@@ -54,7 +54,6 @@ class TimeResolver:
         : return: time in [minutes]
         : rtype: string
         """
-
         isNumber = True # resolving timr from number
         calculation_array = []
         _number = 0
@@ -103,10 +102,10 @@ class TimeResolver:
             if ((char.isdigit() == True) & (is_digit_mode == True)): # retriving number from string mode
                 temporary_string = temporary_string + char
                 continue
-            elif((char.isdigit() == False) & (is_word_mode == True) & (ord(char) != 32)): # retriving word from string mode, skipping " "
+            elif((char.isdigit() == False) & (is_word_mode == True) & (ord(char) != 32)): # retriving word from string mode 
                 temporary_string = temporary_string + char
                 continue
-            elif((char.isdigit() == False) & (is_digit_mode == True)  & (ord(char) != 32)): # This is first char in new word, skipping " "
+            elif((char.isdigit() == False) & (is_digit_mode == True)  & (ord(char) != 32)): # This is first char in new word
                 string_array.append(temporary_string)
                 temporary_string = "" + char # reset temporary string and write first char of new word
                 is_digit_mode = False
@@ -119,4 +118,6 @@ class TimeResolver:
                 is_word_mode = False
                 continue
         string_array.append(temporary_string) # add last string
+        if (len(string_array) == 1 and string_array[0] != ""): # if string have only one sign (like "1") then adding description "min"
+            string_array.append("min")
         return string_array
