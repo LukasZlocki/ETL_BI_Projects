@@ -34,17 +34,28 @@ class TimeResolver:
     
     
     def resolve_string_and_return_time_in_minutes(self, string_to_resolve):
+        # check if given string is a description of time ex not description of time: "do 13:30." or " do 13:40."
+        if(string_to_resolve == ""): 
+            return "N/A"
+        if(string_to_resolve[0].isdigit() != True and string_to_resolve[0] != " " ):  #("do 13:40.", "FAIL: do 13:40.")
+            return ("FAIL: " + str(string_to_resolve))
+        elif (string_to_resolve[0] == " " and string_to_resolve[1].isdigit() != True ):  #("do 13:40.", "FAIL: do 13:40.")
+            return ("FAIL: " + str(string_to_resolve))
+        
         # extracting words and numbers from string
-        array_of_words_and_numbers = self._extracting_words_and_numbers_from_string(self, string_to_resolve)
+        array_of_words_and_numbers = self._extracting_words_and_numbers_from_string(string_to_resolve)
         resolved_time_array = self._extracting_time_from_array_of_words_and_numbers(array_of_words_and_numbers)
         resolved_time = self._resolve_time_from_final_array(resolved_time_array)
         return resolved_time
 
     def _resolve_time_from_final_array(self, resolved_time_array):
-        time = 0
-        for element in resolved_time_array:
+        try:
+            time = 0
+            for element in resolved_time_array:
                 time = time + element[0] * element[1]
-        return time
+            return time
+        except:
+            return resolved_time_array
 
     def _extracting_time_from_array_of_words_and_numbers(self, array):
         """
@@ -64,6 +75,8 @@ class TimeResolver:
                 isNumber = False # switch to look for number from word
             else:
                 multiplicator_as_string = self._retrive_multiplicator_from_word(element)
+                if (multiplicator_as_string == "Not in dictionary"):
+                    return multiplicator_as_string
                 _multiplicator = int(multiplicator_as_string) # Convert word to proper multipilcator (ex word: 1h = 60 min)
                 isNumber = True
                 calculation_array.append([_number, _multiplicator])
