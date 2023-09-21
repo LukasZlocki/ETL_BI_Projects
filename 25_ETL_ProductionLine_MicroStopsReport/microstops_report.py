@@ -1,11 +1,27 @@
 import os
 import csv
+from time_resolver import TimeResolver
 
 class MicrostopsReport:
-    '''
-    '''
+
     _csv_dataset = []
 
+    def resolve_time_description_and_transformstrings_to_time_in_minutes(self, column_with_time_to_resolve):
+        '''
+        Resolve time in [minute] from dataset with string of words and numbers
+        : param column_with_time_to_resolve: column number were time is given as word or nmbe ras a string to resolve
+        : type column_with_time_to_resolve: integer
+        '''
+        tr = TimeResolver()
+        count = 0
+        for element in self._csv_dataset:
+            if count == 0:
+                count = count + 1
+                continue
+            resolved_time = tr.resolve_string_and_return_time_in_minutes(element[column_with_time_to_resolve])
+            element[column_with_time_to_resolve] = resolved_time
+            print(resolved_time)
+        #tr.resolve_string_and_return_time_in_minutes
 
     def load_dataset_from_csv_file(self,path, file_name):
         """
