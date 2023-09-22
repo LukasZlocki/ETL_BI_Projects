@@ -39,7 +39,10 @@ print("Changing time")
 ms_report.resolve_time_description_and_transformstrings_to_time_in_minutes(5) # << -- column nb 5 consist described time
 
 
-# Steps ToDo: Create method pointing that script is not able to resolve micro stop given b operator . This operation will be done manualy and description will be added to dictionary manualy
+# Steps ToDo: Create method pointing that script is not able to resolve micro stop given b operator 
+# - This operation will be done manualy and description will be added to dictionary manualy
+# I am working on this topic ! 
+
 # Steps TodO: Save data to output csv file
 # * Micro stops root cause standardization *
 # Steps ToDo: steps need to be staed here

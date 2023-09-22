@@ -34,8 +34,9 @@ class TimeResolver:
     
     
     def resolve_string_and_return_time_in_minutes(self, string_to_resolve):
+        string_to_resolve = string_to_resolve.lower() # convert to lover letters in order to avoid adding do dict lik "Min", "MIN", "miN"
         # check if given string is a description of time ex not description of time: "do 13:30." or " do 13:40."
-        if(string_to_resolve == ""): 
+        if(string_to_resolve == "" or string_to_resolve == " "): 
             return "N/A"
         if(string_to_resolve[0].isdigit() != True and string_to_resolve[0] != " " ):  #("do 13:40.", "FAIL: do 13:40.")
             return ("FAIL: " + str(string_to_resolve))
@@ -45,6 +46,8 @@ class TimeResolver:
         # extracting words and numbers from string
         array_of_words_and_numbers = self._extracting_words_and_numbers_from_string(string_to_resolve)
         resolved_time_array = self._extracting_time_from_array_of_words_and_numbers(array_of_words_and_numbers)
+        if(resolved_time_array == "Not in dictionary"): # string not in dictionary return with proper description
+            return "Not in dictionary: " +  string_to_resolve
         resolved_time = self._resolve_time_from_final_array(resolved_time_array)
         return resolved_time
 
