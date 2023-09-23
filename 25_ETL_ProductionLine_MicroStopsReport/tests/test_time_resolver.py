@@ -2,6 +2,8 @@
 import sys
 import os
 
+#python3 -m pytest
+
 # Add the parent directory (the root of your project) to sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
